@@ -1,0 +1,39 @@
+var nm_mt_rand = '1549470724';
+var nm_tag_uri = 'https://';
+var nm_query_str = 'aid=5569&siclientid=103466';
+
+
+if (document.createElement && document.body) {
+  var i=document.createElement('IMG');
+  i.src='https://secure.adnxs.com/seg?add=16519900&t=2';
+  i.width=1;
+  i.height=1;
+  i.border=0;
+  document.body.appendChild(i);
+}
+
+
+if (document.getElementById && document.createElement && document.body) {
+  var axel = Math.random() + '';
+  var a = axel * 10000000000000;
+  var i = document.createElement('IFRAME');
+  i.src = 'https://9015484.fls.doubleclick.net/activityi;src=9015484;type=invmedia;cat=thekn00i;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=' + a + '?';
+  i.width = '1';
+  i.height = '1';
+  i.frameBorder = '0';
+	i.style.display =	'none';
+  document.body.appendChild(i);
+}
+
+
+if (document.getElementById && document.createElement && document.body) {
+  var axel = Math.random() + '';
+  var a = axel * 10000000000000;
+  var i=document.createElement('IFRAME');
+  i.src='https://9015484.fls.doubleclick.net/activityi;src=9015484;type=invmedia;cat=thekn00k;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=' + a + '?';
+  i.width=1;
+  i.height=1;
+  i.frameBorder=0;
+  document.body.appendChild(i);
+}
+ 
