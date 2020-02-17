@@ -1,1 +1,0 @@
-# arturoysimone.github.io
