@@ -1,7 +1,0 @@
-var nm_mt_rand = '1532948153';
-var nm_tag_uri = 'https://';
-var nm_query_str = 'aid=5569&siclientid=103466';
-
- if (document.getElementById && document.createElement && document.body) {  var axel = Math.random() + '';  var a = axel * 10000000000000;  var i=document.createElement('IFRAME');  i.src='https://9015484.fls.doubleclick.net/activityi;src=9015484;type=invmedia;cat=gener0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=' + a + '?';  i.width=1;  i.height=1;  i.frameBorder=0;  document.body.appendChild(i); }
- if (document.getElementById && document.createElement && document.body) {     var nmpb=document.createElement('script');     nmpb.src = 'https://secure.adnxs.com/seg?add=15242624&t=1';    document.getElementsByTagName('body')[0].appendChild(nmpb); }
- 
