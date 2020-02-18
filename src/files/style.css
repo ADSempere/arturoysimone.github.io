@@ -1,3 +1,4 @@
+
 .css-o8rd1n {
     background-color: #ffffff;
     background-position: top center;
@@ -54,7 +55,7 @@
     }
 }
 
-.css-1r8zw60 {
+.main {
     position: relative;
     min-height: 100vh;
     display: -webkit-box;
@@ -87,7 +88,7 @@
     margin-bottom: 20px;
     width: 100%;
     z-index: 19;
-    
+
 }
 
 @media(min-width:768px) {
@@ -96,7 +97,7 @@
     }
 }
 
-.css-3kny8p {
+.default-image {
     width: 100%;
 }
 
@@ -106,19 +107,13 @@
     }
 }
 
-.css-1u9renw {
+.header-intro {
     padding: 0 4% 10px 4%;
     text-align: center;
     z-index: 1;
 }
 
-@media (min-width:768px) {
-    .css-1u9renw {
-        display: none;
-    }
-}
-
-.css-1usm4dj {
+.header-title {
     line-height: 1;
     font-family: Taviraj;
     color: #565458;
@@ -134,12 +129,12 @@
 }
 
 @media (min-width:640px) {
-    .css-1usm4dj {
+    .header-title {
         font-size: 42px;
     }
 }
 
-.css-1b7i2p7 {
+.header-subtitle {
     line-height: 1;
     font-family: Taviraj;
     color: #565458;
@@ -154,9 +149,9 @@
 }
 
 @media (min-width:640px) {
-    .css-1b7i2p7 {
+    .header-subtitle {
         font-size: calc(1.25 * 16px);
-    } 
+    }
 }
 
 
@@ -171,18 +166,7 @@
     }
 }
 
-.css-nu7vgm {
-    padding: 0 4% 10px 4%;
-    text-align: center;
-    z-index: 1;
-    display: none;
-}
 
-@media (min-width:768px) {
-    .css-nu7vgm {
-        display: block;
-    }
-}
 
 .css-e3iuyu {
     background: none;
@@ -193,7 +177,7 @@
     border-radius: 3px;
 }
 
-.css-10715wy {
+.bar-fixed {
     background-color: #ffffff;
     height: 56px;
     left: 0;
@@ -205,12 +189,12 @@
 }
 
 @media (min-width:768px) {
-    .css-10715wy {
+    .bar-fixed {
         display: none;
     }
 }
 
-.css-196kpaq {
+.bar-title {
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -241,7 +225,7 @@
     left: 0;
     overflow: hidden;
     position: fixed;
-    top: 0; 
+    top: 0;
     width: 100%;
     z-index: 18;
 }
@@ -338,18 +322,18 @@
     width: fit-content;
 }
 
-.css-ripos4 {
-    display: none;
+.bar-language {
+    display: block;
     padding-top: 20px;
 }
 
 @media (min-width:768px) {
-    .css-ripos4 {
+    .bar-language {
         display: block;
     }
 }
 
-.css-1bpqnod {
+.bar-language-container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -365,7 +349,7 @@
     padding: 8px 16px;
 }
 
-.css-16kcklx {
+.bar-list {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -379,7 +363,7 @@
     justify-content: center;
 }
 
-.css-haue6f {
+.bar-elem {
     display: inline-block;
     list-style: none;
     padding: 0 8px;
@@ -390,7 +374,7 @@
     padding: 8px 0;
 }
 
-.css-uxpqb9 {
+.bar-elem-link {
     display: block;
     padding: 14px 0;
     margin: 8px 0;
@@ -526,14 +510,14 @@
     }
 }
 
-.css-48pttl {
+.content {
     margin: auto;
     max-width: 720px;
     padding: 0 20px;
 }
 
 @media (min-width:720px) {
-    .css-48pttl {
+    .content {
         padding: 0;
     }
 }
@@ -651,7 +635,7 @@
     }
 }
 
-.css-1i4ijnt {
+h3 {
     margin: 12px 0;
     line-height: 1;
     font-family: Allura;
@@ -704,7 +688,7 @@
     background-color: rgba(86, 84, 88, 10%);
 }
 
-.css-rzmzie {
+footer {
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -725,7 +709,7 @@
     width: 100%;
 }
 
-.css-4z6i28 {
+.footer-container {
     font-family: Taviraj;
     color: #565458;
     font-size: 42px;
@@ -747,11 +731,11 @@
     width: fit-content;
 }
 
-.css-7wvfr1 {
+.footer-title {
     padding: 0 18px 16px;
 }
 
-.css-obp29f {
+.footer-subtitle {
     border-top: 1px solid #565458;
     font-size: 20px;
     padding: 20px 18px 0;
@@ -777,15 +761,17 @@
     max-height: 120px;
 }
 
-textarea, input {
+textarea,
+input {
     border-width: 1px;
 }
 
 .input-area {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5px;
 }
 
 .input-area label {
@@ -859,7 +845,7 @@ button {
     border: 1px solid #c7cdd4;
     padding: 5px;
     border-radius: 5px;
-    
+
 }
 
 body {
@@ -871,18 +857,17 @@ strong {
     font-weight: 500
 }
 
-
 .content-paragraph, p {
-    font-family:Taviraj;
-    color:#565458;
-    font-size:16px;
-    font-weight:400;
-    -webkit-letter-spacing:.25px;
-    -moz-letter-spacing:.25px;
-    -ms-letter-spacing:.25px;
-    letter-spacing:.25px;
-    line-height:1.75;
-    margin:32px 0;
+    font-family: Taviraj;
+    color: #565458;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-letter-spacing: .25px;
+    -moz-letter-spacing: .25px;
+    -ms-letter-spacing: .25px;
+    letter-spacing: .25px;
+    line-height: 1.75;
+    margin: 32px 0;
 }
 
 nav {

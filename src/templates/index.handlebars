@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="css-1r8zw60">
+    <div class="main">
         <picture class="leaf">
             <source
                 media="(min-resolution: 192dpi) and (min-width: 1280px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px)"
@@ -40,40 +40,38 @@
             <source media="(min-width: 1024px)" srcset="files/1024.png">
             <source media="(min-width: 768px)" srcset="files/768.png">
             <source srcset="files/600.png">
-            <img alt="" data-src="files/768.png" src="files/768.png" class="css-3kny8p" />
+            <img alt="" data-src="files/768.png" src="files/768.png" class="default-image" />
         </picture>
-        <header class="css-1u9renw">
-            <h1 class="css-1usm4dj">{{title}}</h1>
-            <div class="css-1b7i2p7">{{weddingDate}}</div>
-            <div class="css-1b7i2p7">{{weddingLocation}}</div>
+        <header class="header-intro">
+            <h1 class="header-title">{{title}}</h1>
+            <div class="header-subtitle">{{weddingDate}}</div>
+            <div class="header-subtitle">{{weddingLocation}}</div>
         </header>
-        <header class="css-nu7vgm">
-            <h1 class="css-1usm4dj">{{title}}</h1>
-            <div class="css-1b7i2p7">{{weddingDate}}</div>
-            <div class="css-1b7i2p7">{{weddingLocation}}</div>
-        </header>
-        <div class="css-10715wy">
-            <h2 class="css-196kpaq">{{titleShort}}</h2>
+        <div class="bar-fixed">
+            <h2 class="bar-title">{{titleShort}}</h2>
         </div>
-        <nav class="css-ripos4">
-            <div class="css-1bpqnod">
-                <ul data-testid="desktop-nav-row-1" class="css-16kcklx">
-                    <li class="css-haue6f">
-                        <a rel="nofollow" class="css-uxpqb9" href="/"><span class="link{{link-es}}">Castellano</span></a>
+        <nav class="bar-language">
+            <div class="bar-language-container">
+                <ul class="bar-list">
+                    <li class="bar-elem">
+                        <a rel="nofollow" class="bar-elem-link" href="/"><span
+                                class="link{{link-es}}">Castellano</span></a>
                     </li>
-                    <li class="css-haue6f">
-                        <a rel="nofollow" class="css-uxpqb9" href="/nl"><span class="link{{link-nl}}">Nederlands</span></a>
+                    <li class="bar-elem">
+                        <a rel="nofollow" class="bar-elem-link" href="/nl"><span
+                                class="link{{link-nl}}">Nederlands</span></a>
                     </li>
-                    <li class="css-haue6f">
-                        <a rel="nofollow" class="css-uxpqb9" href="/en"><span class="link{{link-en}}">English</span></a>
+                    <li class="bar-elem">
+                        <a rel="nofollow" class="bar-elem-link" href="/en"><span
+                                class="link{{link-en}}">English</span></a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="css-48pttl">
+        <div class="content">
             {{> (lookup . 'introSrc') }}
 
-            <h3 class="css-1i4ijnt">{{attendance}}</h3>
+            <h3>{{attendance}}</h3>
 
             <div class="content-paragraph">{{attendanceIntro}}</div>
 
@@ -121,16 +119,16 @@
 
             <p>{{attendanceOutro}}</p>
 
-            <h3 class="css-1i4ijnt">{{presents}}</h3>
+            <h3>{{presents}}</h3>
             <p>{{presentsText}}</p>
-            <h3 class="css-1i4ijnt">{{directions}}</h3>
+            <h3>{{directions}}</h3>
             <p>{{directionsText}}</p>
         </div>
     </div>
-    <footer class="css-rzmzie">
-        <div class="css-4z6i28">
-            <div class="css-7wvfr1">{{titleShort}}</div>
-            <div class="css-obp29f">{{weddingDateShort}}</div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-title">{{titleShort}}</div>
+            <div class="footer-subtitle">{{weddingDateShort}}</div>
         </div>
     </footer>
     <script src="files/script.js"></script>
