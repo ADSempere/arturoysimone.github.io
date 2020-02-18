@@ -81,7 +81,7 @@
     }
 }
 
-.leaf-big {
+.leaf {
     max-width: 100%;
     max-height: 120px;
     margin-bottom: 20px;
@@ -91,32 +91,10 @@
 }
 
 @media(min-width:768px) {
-    .leaf-big {
+    .leaf {
         margin-top: -32px;
     }
 }
-
-/*
-@media (min-width:768px) {
-    .leaf-big {
-        display: none;
-    }
-}*/
-
-.leaf-small {
-    max-width: 100%;
-    max-height: 120px;
-    margin-bottom: 20px;
-    width: 100%;
-    margin-top: -32px;
-    display: none;
-}
-/*
-@media (min-width:768px) {
-    .leaf-small {
-        display: block;
-    }
-}*/
 
 .css-3kny8p {
     width: 100%;
