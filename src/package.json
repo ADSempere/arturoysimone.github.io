@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/arturoysimone/arturoysimone.github.io#readme",
   "dependencies": {
-    "handlebars": "^4.7.3"
+    "handlebars": "^4.7.3",
+    "uglify-js": "^3.8.0"
   }
 }
