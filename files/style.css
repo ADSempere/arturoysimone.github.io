@@ -127,7 +127,7 @@
     }
 }
 
-p {
+div, p {
     font-family:Taviraj;
     color:#565458;
     font-size:16px;
@@ -241,6 +241,7 @@ p {
     top: 0;
     width: 100%;
     z-index: 18;
+    margin: 0;
 }
 
 @media (min-width:768px) {
@@ -816,6 +817,87 @@ p {
     max-height: 120px;
 }
 
-input {
+textarea, input {
     border-width: 1px;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.input-area label {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 0.25;
+    padding: 0 5px;
+}
+
+.input-container {
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.radio-container {
+    margin: 0;
+}
+
+.input-radio-block {
+    margin: 0;
+}
+
+.radio-container label {
+    display: inline;
+}
+
+.radio-container input {
+    margin: 0;
+    padding: 0;
+}
+
+.submit-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+}
+
+button {
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #c7cdd4;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#success-message {
+    display: none;
+    border: 1px solid #c7cdd4;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#error-message {
+    display: none;
+    color: #9a5151;
+    border: 1px solid #da8181;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-container {
+
+    border: 1px solid #c7cdd4;
+    padding: 5px;
+    border-radius: 5px;
+    
 }

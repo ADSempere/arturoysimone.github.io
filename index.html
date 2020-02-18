@@ -16,7 +16,6 @@
 <body>
     <div>
         <div class="css-1r8zw60">
-            <div class="css-xdcd7r"></div>
             <picture class="css-16oqj42">
                 <source
                     media="(min-resolution: 192dpi) and (min-width: 1280px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px)"
@@ -114,46 +113,59 @@
 
                 <h3 class="css-1i4ijnt">Asistencia</h3>
                 <p>Te agradecemos que nos confirmes lo antes posible,
-                    así organizarlo todo nos será mucho más fácil.
-                    También puedes hacerlo por teléfono o WhatsApp,
+                    así organizarlo todo nos será mucho más fácil.</p>
+                <p>Para confirmar tu asistencia a la boda puedes rellenar este formulario.
+                    Puedes enviarlo varias veces, por si tienes acompanantes.</p>
+
+                <div class="form-container">
+                    <div id="success-message">Asistencia de "<span id="success-name"></span>" recibida.
+                        <br /> Si tienes acompañantes, puedes enviarnos también su asistencia.</div>
+                    <div id="error-message">Ha ocurrido un error enviando la asistencia.</div>
+                    <form>
+                        <div class="input-area">
+                            <label>Nombe</label>
+
+                            <div class="input-container">
+                                <input type="text" name="name" required />
+                            </div>
+                        </div>
+
+                        <div class="input-area">
+                            <label>Asistencia</label>
+                            <div class="input-container radio-container">
+                                <div class="input-radio-block">
+                                    <input type="radio" id="yes" name="confirmation" value="Yes" checked>
+                                    <label for="yes">Me apunto</label>
+                                </div>
+
+                                <div class="input-radio-block">
+                                    <input type="radio" id="no" name="confirmation" value="No">
+                                    <label for="yes">Me lo pierdo</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-area">
+                            <label>Comentario<br/>(opcional)</label>
+                            <div class="input-container">
+                                <textarea name="comment"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="submit-area">
+                            <button type="submit" id="submit-form">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+
+                <p>También puedes hacerlo por teléfono o WhatsApp,
                     nuestros teléfonos son +31 6300 15551 (Arturo) y +31 642 344 741 (Simone).</p>
-                <p>Para confirmar tu asistencia a la boda sólo tienes que escribir tu nombre y darle a Buscar. Aparcerá
-                    tu nombre y sólo tienes que decir si vienes o no a la boda. Dejar el mensaje es opcional pero
-                    siempre hace ilusión :)</p>
-
-
-                    <div>
-                        <div id="success-message">Asistencia recibida para <span id="success-name"></span></div>
-                        <div id="error-message"></div>
-                        <form>
-                            <div>
-                              <label>Nombe</label>
-                              <input type="text" name="name" />
-                            </div>
-                          
-                            <div>
-                              <label>Comentario</label>
-                              <input type="text" name="comment"  />
-                            </div>
-                            
-                            <div>
-                              <label>Asistencia</label>
-                              <input type="text" name="confirmation"  />
-                            </div>
-                          
-                            <div>
-                              <button type="submit"id="submit-form">Submit</button>
-                            </div>
-                          </form>
-                    </div>
-
-
 
                 <h3 class="css-1i4ijnt">Regalos</h3>
                 <p>Si queréis contribuir a la fiesta, os dejamos este número de cuenta:
                     <br />NL98 INGB 0664 1877 14
                     <br />Y si te piden el BIC: INGBNL2A</p>
-                <h3 class="css-1i4ijnt"g>Cómo llegar</h3>
+                <h3 class="css-1i4ijnt" g>Cómo llegar</h3>
                 <p>La dirección del recinto donde se celebrará la boda es Finca el Belón, Partida El Volaor 41, 03110
                     Mutxamel,
                     Alicante, España.</p>
