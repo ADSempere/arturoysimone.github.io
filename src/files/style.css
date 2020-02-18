@@ -19,7 +19,7 @@
     max-height: 120px;
     margin-bottom: 20px;
     width: 100%;
-    z-index: 19;
+    z-index: 6;
 
 }
 
@@ -87,7 +87,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 18;
+    z-index: 5;
     margin: 0;
 }
 
@@ -154,6 +154,7 @@
 @media (min-width:768px) {
     .bar-language {
         display: block;
+        z-index: 10;
     }
 }
 
@@ -415,10 +416,6 @@ strong {
     letter-spacing: .25px;
     line-height: 1.75;
     margin: 32px 0;
-}
-
-nav {
-    z-index: 20;
 }
 
 .content a {
