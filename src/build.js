@@ -1,15 +1,19 @@
+console.log(new Date().toUTCString()+" starting build.");
+
 const fs = require('fs');
 const Handlebars = require("handlebars");
 const UglifyJS = require("uglify-js");
 var minify = require('html-minifier').minify;
 
-var contents = fs.readFileSync('./index.handlebars', 'utf8');
+var contents = fs.readFileSync('./templates/index.handlebars', 'utf8');
 const template = Handlebars.compile(contents);
 
 function generateHtml(inputFile,outputFile){
     const input = require(inputFile);
 
-    const intro = fs.readFileSync('./'+input.introSrc, 'utf8');
+    input["link-"+input.lang] = "-active";
+
+    const intro = fs.readFileSync('./templates/'+input.introSrc, 'utf8');
     Handlebars.registerPartial(input.introSrc, intro);
     
     const result = template(input);
@@ -19,9 +23,9 @@ function generateHtml(inputFile,outputFile){
     fs.writeFileSync(outputFile, minHtml, { mode: 0o755 }); 
 }
 
-generateHtml('./es.json','../index.html');
-generateHtml('./nl.json','../nl.html');
-generateHtml('./en.json','../en.html');
+generateHtml('./translations/es.json','../index.html');
+generateHtml('./translations/nl.json','../nl.html');
+generateHtml('./translations/en.json','../en.html');
 
 var js = fs.readFileSync('./files/script.js', 'utf8');
 var minJs = UglifyJS.minify(js);
@@ -33,3 +37,5 @@ var uglified = uglifycss.processFiles(
     './files/style.css' ]
 );
 fs.writeFileSync('../files/min.css', uglified, { mode: 0o755 }); 
+
+console.log(new Date().toUTCString()+" finished build.");

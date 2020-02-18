@@ -118,19 +118,6 @@
     }
 }
 
-.content-paragraph, p {
-    font-family:Taviraj;
-    color:#565458;
-    font-size:16px;
-    font-weight:400;
-    -webkit-letter-spacing:.25px;
-    -moz-letter-spacing:.25px;
-    -ms-letter-spacing:.25px;
-    letter-spacing:.25px;
-    line-height:1.75;
-    margin:32px 0;
-}
-
 .css-1usm4dj {
     line-height: 1;
     font-family: Taviraj;
@@ -304,7 +291,7 @@
     margin: 8px 0;
 }
 
-.css-1l7y6mr {
+.link-active {
     font-family: Taviraj;
     color: #565458;
     font-size: 16px;
@@ -411,7 +398,7 @@
     padding: 8px 0;
 }
 
-.css-1eq1hpm {
+.link {
     font-family: Taviraj;
     color: #565458;
     font-size: 16px;
@@ -434,7 +421,7 @@
     width: fit-content;
 }
 
-.css-1eq1hpm:hover {
+.link:hover {
     color: #7c797f;
     border-bottom: 2px solid rgba(124, 121, 127, 70%);
 }
@@ -884,7 +871,20 @@ strong {
     font-weight: 500
 }
 
-a {
-    font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
-    font-weight: inherit
+
+.content-paragraph, p {
+    font-family:Taviraj;
+    color:#565458;
+    font-size:16px;
+    font-weight:400;
+    -webkit-letter-spacing:.25px;
+    -moz-letter-spacing:.25px;
+    -ms-letter-spacing:.25px;
+    letter-spacing:.25px;
+    line-height:1.75;
+    margin:32px 0;
+}
+
+nav {
+    z-index: 20;
 }
