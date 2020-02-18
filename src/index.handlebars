@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Arturo &amp; Simone</title>
+    <title>{{ title }}</title>
     <meta name="googlebot" content="noindex,nofollow">
     <meta name="robots" content="noindex,nofollow">
     <link rel="icon" type="image/x-icon" href="./files/favicon.ico">
@@ -102,14 +102,8 @@
                 </div>
             </nav>
             <div class="css-48pttl">
-                <p>Pues sí, ¡nos vamos a casar!</p>
-                <p>Y nos haría mucha ilusión que compartieseis con nosotros en este día tan especial. <br />Os esperamos
-                    este 12 de
-                    septiembre en la finca El Belón (<a target="_blank"
-                        href="https://maps.google.com/maps/search/Finca%20Belon/@38.4271240234375,-0.4588676393032074,17z">dirección</a>)
-                    a partir de las 17:30. <br />Allí celebraremos la ceremonia, seguida de cóctel,
-                    cena y fiesta con música en directo y 4 horas de barra libre.</p>
-                <p>Nos vemos muy pronto, <br />¡Un abrazo! <br />Simone y Arturo</p>
+                {{> (lookup . 'intro') }}
+
                 <h3 class="css-1i4ijnt">Asistencia</h3>
                 <p>Te agradecemos que nos confirmes lo antes posible rellenando este formulario,
                     así organizarlo todo nos será mucho más fácil. Puedes enviarlo varias veces, por si tienes acompanantes.</p>
