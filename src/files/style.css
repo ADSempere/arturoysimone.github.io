@@ -312,6 +312,11 @@ footer {
 textarea,
 input {
     border-width: 1px;
+    border-radius: 2px;
+}
+
+textarea {
+    min-height: 100px;
 }
 
 .input-area {
@@ -343,7 +348,7 @@ input {
 }
 
 .input-radio-block {
-    margin: 0;
+    margin: 0 0 5px 0;
 }
 
 .radio-container label {

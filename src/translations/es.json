@@ -22,5 +22,6 @@
     "presents" : "Regalos",
     "presentsText" : "Si queréis contribuir a la fiesta, os dejamos este número de cuenta: NL98INGB0664187714 (y si te piden el BIC: INGBNL2A).",
     "directions" : "Cómo llegar",
-    "directionsText" : "La dirección del recinto donde se celebrará la boda es Finca el Belón, Partida El Volaor 41, 03110, Mutxamel, Alicante, España."
+    "directionsText" : "La dirección del recinto donde se celebrará la boda es ",
+    "address" : "Finca el Belón, Partida El Volaor 41, 03110, Mutxamel, Alicante, España"
 }
