@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node build.js"
+    "start": "node build.js",
+    "dev": "watch 'npm start' ."
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
     "handlebars": "^4.7.3",
     "html-minifier": "^4.0.0",
     "uglify-js": "^3.8.0",
-    "uglifycss": "0.0.29"
+    "uglifycss": "0.0.29",
+    "watch": "^1.0.2"
   }
 }
