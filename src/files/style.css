@@ -81,32 +81,45 @@
     }
 }
 
-.css-16oqj42 {
+.leaf-big {
     max-width: 100%;
     max-height: 120px;
     margin-bottom: 20px;
     width: 100%;
+    z-index: 19;
+    
 }
 
 @media(min-width:768px) {
-    .css-16oqj42 {
-        margin-top: -30px;
+    .leaf-big {
+        margin-top: -32px;
     }
 }
 
+/*
 @media (min-width:768px) {
-    .css-16oqj42 {
+    .leaf-big {
         display: none;
     }
+}*/
+
+.leaf-small {
+    max-width: 100%;
+    max-height: 120px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: -32px;
+    display: none;
 }
+/*
+@media (min-width:768px) {
+    .leaf-small {
+        display: block;
+    }
+}*/
 
 .css-3kny8p {
     width: 100%;
-}
-
-.css-3kny8p[loading='lazy']:not(.loaded) {
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
 }
 
 @media (min-width:768px) {
@@ -127,7 +140,7 @@
     }
 }
 
-div, p {
+.content-paragraph, p {
     font-family:Taviraj;
     color:#565458;
     font-size:16px;
@@ -178,28 +191,10 @@ div, p {
 @media (min-width:640px) {
     .css-1b7i2p7 {
         font-size: calc(1.25 * 16px);
-    }
+    } 
 }
 
-.css-3muje1 {
-    max-width: 100%;
-    max-height: 120px;
-    margin-bottom: 20px;
-    width: 100%;
-    display: none;
-}
 
-@media(min-width:768px) {
-    .css-3muje1 {
-        margin-top: -30px;
-    }
-}
-
-@media (min-width:768px) {
-    .css-3muje1 {
-        display: block;
-    }
-}
 
 .css-1jgbffo {
     display: none;
@@ -900,4 +895,18 @@ button {
     padding: 5px;
     border-radius: 5px;
     
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+strong {
+    font-weight: 500
+}
+
+a {
+    font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    font-weight: inherit
 }
