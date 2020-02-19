@@ -29,7 +29,7 @@ generateHtml('./translations/en.json','../en.html');
 
 var js = fs.readFileSync('./scripts/script.js', 'utf8');
 var minJs = UglifyJS.minify(js);
-fs.writeFileSync('../scripts/script.js', minJs.code, { mode: 0o755 }); 
+fs.writeFileSync('../files/script.js', minJs.code, { mode: 0o755 }); 
 
 var uglifycss = require('uglifycss');
 var uglified = uglifycss.processFiles(
