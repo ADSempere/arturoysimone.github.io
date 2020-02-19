@@ -27,14 +27,14 @@ generateHtml('./translations/es.json','../index.html');
 generateHtml('./translations/nl.json','../nl.html');
 generateHtml('./translations/en.json','../en.html');
 
-var js = fs.readFileSync('./files/script.js', 'utf8');
+var js = fs.readFileSync('./scripts/script.js', 'utf8');
 var minJs = UglifyJS.minify(js);
-fs.writeFileSync('../files/script.js', minJs.code, { mode: 0o755 }); 
+fs.writeFileSync('../scripts/script.js', minJs.code, { mode: 0o755 }); 
 
 var uglifycss = require('uglifycss');
 var uglified = uglifycss.processFiles(
-    [ './files/reset.css', 
-    './files/style.css' ]
+    [ './styles/reset.css', 
+    './styles/style.css' ]
 );
 fs.writeFileSync('../files/min.css', uglified, { mode: 0o755 }); 
 
