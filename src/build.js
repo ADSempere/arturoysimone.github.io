@@ -25,7 +25,6 @@ function generateHtml(inputFile,outputFile){
 
 generateHtml('./translations/es.json','../index.html');
 generateHtml('./translations/nl.json','../nl.html');
-generateHtml('./translations/en.json','../en.html');
 
 var js = fs.readFileSync('./scripts/script.js', 'utf8');
 var minJs = UglifyJS.minify(js);

@@ -10,7 +10,9 @@
     <link rel="icon" type="image/x-icon" href="./files/favicon.ico">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Taviraj:Regular,400,600%7CAllura:400&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./files/min.css">
+    <script src="https://kit.fontawesome.com/1aec537cf6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -61,10 +63,6 @@
                         <a rel="nofollow" class="bar-elem-link" href="/nl"><span
                                 class="link{{link-nl}}">Nederlands</span></a>
                     </li>
-                    <li class="bar-elem">
-                        <a rel="nofollow" class="bar-elem-link" href="/en"><span
-                                class="link{{link-en}}">English</span></a>
-                    </li>
                 </ul>
             </div>
         </nav>
@@ -77,8 +75,7 @@
 
             <div class="form-container">
                 <div id="success-message">{{attendanceSuccessPre}}"<span
-                        id="success-name"></span>"{{attendanceSuccessPost}}
-                    <br />{{attendanceSuccessSecondLine}}</div>
+                        id="success-name"></span>"{{attendanceSuccessPost}}</div>
                 <div id="error-message">{{attendanceError}}</div>
                 <form>
                     <div class="input-area">
@@ -117,12 +114,20 @@
                 </form>
             </div>
 
-            <p>{{attendanceOutro}}</p>
-
             <h3>{{presents}}</h3>
+            {{#if presentsText}}
             <p>{{presentsText}}</p>
+            {{/if}}
+            <p><i class="far fa-envelope"></i> NL20 INGB 0681 0098 88 {{bankPost}}</p>
             <h3>{{directions}}</h3>
-            <p>{{directionsText}}<br/><a target="_blank" href="https://goo.gl/maps/xLUaNV18nXVEsomX6">{{address}}</a>.</p>
+            <p>{{directionsText}}<br/>{{address}}. 
+            <br/><a target="_blank" href="https://goo.gl/maps/xLUaNV18nXVEsomX6">{{gMaps}}</a></p>
+
+            {{#if overnight}}
+            <h3>{{overnight}}</h3>
+            <p>{{overnightText}}</p>
+            {{/if}}
+
         </div>
     </div>
     <footer>
