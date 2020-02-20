@@ -1,7 +1,7 @@
 {
     "lang": "es",
-    "title" : "Arturo & Simone",
-    "titleShort" : "A & S",
+    "title" : "Simone & Arturo",
+    "titleShort" : "S & A",
     "introSrc" : "intro.es.handlebars",
     "weddingDate" : "12 de septiembre de 2020",
     "weddingDateShort" : "12/09/2020",
