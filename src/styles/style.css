@@ -386,17 +386,22 @@ button {
 
 #success-message {
     display: none;
-    border: 1px solid #c7cdd4;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    margin-bottom: 16px;
 }
 
 #error-message {
     display: none;
-    color: #9a5151;
-    border: 1px solid #da8181;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    margin-bottom: 16px;
 }
 
 #submit-form {
