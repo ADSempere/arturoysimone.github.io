@@ -332,8 +332,13 @@ textarea {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    flex: 0.25;
     padding: 0 5px;
+}
+
+@media (min-width:480px) {
+    .input-area label {
+        flex: 0.25;
+    }
 }
 
 .input-container {
