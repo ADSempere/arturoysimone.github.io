@@ -11,15 +11,18 @@
         document.getElementById('success-message').style.display = "none";
     }
 
-    function showPending(){
+    function showPending(button){
         document.querySelector('.spinner').style.display = "block";
-        document.getElementById('submit-form').disabled = true;
+        var button = document.getElementById('submit-form');
+        button.style.display = "none";
+        button.disabled = true;
     }
 
-    function hidePending(){
+    function hidePending(button){
         document.querySelector('.spinner').style.display = "none";
-        document.getElementById('submit-form').disabled = false;
-        
+        var button = document.getElementById('submit-form');
+        button.style.display = "block";
+        button.disabled = false;
     }
 
     document.getElementById('submit-form').onclick = function(e){
