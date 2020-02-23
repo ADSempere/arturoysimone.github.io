@@ -88,16 +88,16 @@
 
                     <div class="input-area">
                         <label>{{attendance}}</label>
-                        <div  class="input-container">
+                        <div class="input-container">
                             <div>
 
-                            <label class="switch">
-                                <input type="checkbox" id="togBtn" name="confirmation" checked>
-                                <div class="slider round">
-                                    <span class="on">{{attendanceYes}}</span>
-                                    <span class="off">{{attendanceNo}}</span>
-                                </div>
-                            </label>
+                                <label class="switch">
+                                    <input type="checkbox" id="togBtn" name="confirmation" checked>
+                                    <div class="slider round">
+                                        <span class="on">{{attendanceYes}}</span>
+                                        <span class="off">{{attendanceNo}}</span>
+                                    </div>
+                                </label>
                             </div>
 
                         </div>
@@ -115,7 +115,7 @@
 
                         <div class="spinner">
                             <i class="far fa-heart"></i>
-                        </div>  
+                        </div>
                     </div>
                 </form>
             </div>
@@ -127,10 +127,38 @@
             {{/if}}
 
             <h3>{{presents}}</h3>
-            {{#if presentsText}}
             <p>{{presentsText}}</p>
-            {{/if}}
+
+            {{#if showBig}}
+            <div class="form-container">
+                <div class="input-area small">
+                    <label>Nombre</label>
+
+                    <div class="input-container">
+                        A. Serna Leon
+                    </div>
+                </div>
+
+                <div class="input-area small">
+                    <label>Cuenta</label>
+
+                    <div class="input-container">
+                        NL20 INGB 0681 0098 88
+                    </div>
+                </div>
+
+                <div class="input-area small">
+                    <label>BIC/SWIFT</label>
+
+                    <div class="input-container">
+                        INGBNL2A
+                    </div>
+                </div>
+            </div>
+            {{else}}
             <p><i class="far fa-envelope"></i> NL20 INGB 0681 0098 88 {{bankPost}}</p>
+            {{/if}}
+
             <h3>{{directions}}</h3>
             <p>{{directionsText}}<br />{{address}}.
                 <br /><a target="_blank" href="https://goo.gl/maps/xLUaNV18nXVEsomX6">{{gMaps}}</a></p>
@@ -146,4 +174,5 @@
     </footer>
     <script src="files/script.js"></script>
 </body>
+
 </html>

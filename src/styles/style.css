@@ -326,6 +326,11 @@ textarea {
     margin-top:10px;
 }
 
+.input-area.small {
+    padding: 0;
+    margin: 0;
+}
+
 .input-area label {
     display: flex;
     flex-direction: column;
@@ -345,23 +350,6 @@ textarea {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-}
-
-.radio-container {
-    margin: 0;
-}
-
-.input-radio-block {
-    margin: 0 0 5px 0;
-}
-
-.radio-container label {
-    display: inline;
-}
-
-.radio-container input {
-    margin: 0;
-    padding: 0;
 }
 
 .submit-area {
