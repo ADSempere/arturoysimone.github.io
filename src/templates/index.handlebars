@@ -104,7 +104,7 @@
                     </div>
 
                     <div class="input-area">
-                        <label>{{comment}}<br />({{optional}})</label>
+                        <label>{{comment}} ({{optional}})</label>
                         <div class="input-container">
                             <textarea name="comment"></textarea>
                         </div>
@@ -120,6 +120,12 @@
                 </form>
             </div>
 
+
+            {{#if overnight}}
+            <h3>{{overnight}}</h3>
+            <p>{{overnightText}}</p>
+            {{/if}}
+
             <h3>{{presents}}</h3>
             {{#if presentsText}}
             <p>{{presentsText}}</p>
@@ -129,10 +135,6 @@
             <p>{{directionsText}}<br />{{address}}.
                 <br /><a target="_blank" href="https://goo.gl/maps/xLUaNV18nXVEsomX6">{{gMaps}}</a></p>
 
-            {{#if overnight}}
-            <h3>{{overnight}}</h3>
-            <p>{{overnightText}}</p>
-            {{/if}}
 
         </div>
     </div>
