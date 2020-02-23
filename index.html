@@ -77,16 +77,18 @@
 
                     <div class=input-area>
                         <label>Asistencia</label>
-                        <div class="input-container radio-container">
-                            <div class=input-radio-block>
-                                <input type=radio id=yes name=confirmation value=Yes checked=checked>
-                                <label for=yes>Me apunto</label>
+                        <div class=input-container>
+                            <div>
+
+                            <label class=switch>
+                                <input type=checkbox id=togBtn name=confirmation checked=checked>
+                                <div class="slider round">
+                                    <span class=on>Sí</span>
+                                    <span class=off>No</span>
+                                </div>
+                            </label>
                             </div>
 
-                            <div class=input-radio-block>
-                                <input type=radio id=no name=confirmation value=No>
-                                <label for=yes>Me lo pierdo</label>
-                            </div>
                         </div>
                     </div>
 
@@ -99,6 +101,10 @@
 
                     <div class=submit-area>
                         <button type=submit id=submit-form>Enviar</button>
+
+                        <div class=spinner>
+                            <i class="far fa-heart"></i>
+                        </div>  
                     </div>
                 </form>
             </div>
@@ -107,8 +113,8 @@
             <p>Si queréis hacer una aportación económica, os dejamos este número de cuenta:</p>
             <p><i class="far fa-envelope"></i> NL20 INGB 0681 0098 88 (código SWIFT/BIC: INGBNL2A)</p>
             <h3>Cómo llegar</h3>
-            <p>La dirección del recinto donde se celebrará la boda es <br>Finca el Belón, Partida El Volaor 41, 03110, Mutxamel, Alicante, España. 
-            <br><a target=_blank href=https://goo.gl/maps/xLUaNV18nXVEsomX6>Google Maps</a></p>
+            <p>La dirección del recinto donde se celebrará la boda es <br>Finca el Belón, Partida El Volaor 41, 03110, Mutxamel, Alicante, España.
+                <br><a target=_blank href=https://goo.gl/maps/xLUaNV18nXVEsomX6>Google Maps</a></p>
 
 
         </div>
@@ -121,5 +127,4 @@
     </footer>
     <script src=files/script.js></script>
 </body>
-
 </html>

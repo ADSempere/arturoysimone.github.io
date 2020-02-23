@@ -11,14 +11,27 @@
         document.getElementById('success-message').style.display = "none";
     }
 
+    function showPending(){
+        document.querySelector('.spinner').style.display = "block";
+        document.getElementById('submit-form').disabled = true;
+    }
+
+    function hidePending(){
+        document.querySelector('.spinner').style.display = "none";
+        document.getElementById('submit-form').disabled = false;
+        
+    }
+
     document.getElementById('submit-form').onclick = function(e){
         e.preventDefault();
 
         if (!this.form.reportValidity()) return;
 
+        showPending();
+
         var name = this.form.querySelector('[name=name]').value;
         var comment = this.form.querySelector('[name=comment]').value;
-        var confirmation = this.form.querySelector('[name=confirmation]:checked').value;
+        var confirmation = this.form.querySelector('[name=confirmation]').checked;
         var data = "name="+encodeURIComponent(name)
                     +"&comment="+encodeURIComponent(comment)
                     +"&confirmation="+encodeURIComponent(confirmation);
@@ -39,6 +52,8 @@
                 showErrorMessage();
                 console.log(e); 
             }
+
+            hidePending();
         };
         x.send();
     }

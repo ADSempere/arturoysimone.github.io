@@ -88,16 +88,18 @@
 
                     <div class="input-area">
                         <label>{{attendance}}</label>
-                        <div class="input-container radio-container">
-                            <div class="input-radio-block">
-                                <input type="radio" id="yes" name="confirmation" value="Yes" checked>
-                                <label for="yes">{{attendanceYes}}</label>
+                        <div  class="input-container">
+                            <div>
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" name="confirmation" checked>
+                                <div class="slider round">
+                                    <span class="on">{{attendanceYes}}</span>
+                                    <span class="off">{{attendanceNo}}</span>
+                                </div>
+                            </label>
                             </div>
 
-                            <div class="input-radio-block">
-                                <input type="radio" id="no" name="confirmation" value="No">
-                                <label for="yes">{{attendanceNo}}</label>
-                            </div>
                         </div>
                     </div>
 
@@ -110,6 +112,10 @@
 
                     <div class="submit-area">
                         <button type="submit" id="submit-form">{{submit}}</button>
+
+                        <div class="spinner">
+                            <i class="far fa-heart"></i>
+                        </div>  
                     </div>
                 </form>
             </div>
@@ -120,8 +126,8 @@
             {{/if}}
             <p><i class="far fa-envelope"></i> NL20 INGB 0681 0098 88 {{bankPost}}</p>
             <h3>{{directions}}</h3>
-            <p>{{directionsText}}<br/>{{address}}. 
-            <br/><a target="_blank" href="https://goo.gl/maps/xLUaNV18nXVEsomX6">{{gMaps}}</a></p>
+            <p>{{directionsText}}<br />{{address}}.
+                <br /><a target="_blank" href="https://goo.gl/maps/xLUaNV18nXVEsomX6">{{gMaps}}</a></p>
 
             {{#if overnight}}
             <h3>{{overnight}}</h3>
@@ -138,5 +144,4 @@
     </footer>
     <script src="files/script.js"></script>
 </body>
-
 </html>
