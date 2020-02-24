@@ -28,7 +28,7 @@
     document.getElementById('submit-form').onclick = function(e){
         e.preventDefault();
 
-        if (!this.form.reportValidity()) return;
+        if (this.form.reportValidity !== undefined && !this.form.reportValidity()) return;
 
         showPending();
 
